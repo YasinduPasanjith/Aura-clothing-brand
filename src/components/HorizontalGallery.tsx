@@ -42,7 +42,7 @@ export const HorizontalGallery = () => {
     }, { scope: triggerRef });
 
     return (
-        <section ref={triggerRef} className="bg-white text-eerie-black overflow-hidden pointer-events-none md:pointer-events-auto">
+        <section id="collections" ref={triggerRef} className="bg-white text-eerie-black overflow-hidden pointer-events-none md:pointer-events-auto">
             <div ref={sectionRef} className="flex h-screen items-center" style={{ width: `${COLLECTION_ITEMS.length * 100}vw` }}>
                 {COLLECTION_ITEMS.map((item) => (
                     <div key={item.id} className="h-screen w-screen flex-shrink-0 flex items-center justify-center px-10 md:px-40">
