@@ -33,7 +33,7 @@ export const StickyReveal = () => {
     }, { scope: containerRef });
 
     return (
-        <div ref={containerRef} className="h-[200vh] relative">
+        <div id="archive" ref={containerRef} className="h-[200vh] relative">
             <div className="sticky top-0 h-screen w-full overflow-hidden">
                 <div ref={imageRef} className="relative w-full h-full">
                     <Image

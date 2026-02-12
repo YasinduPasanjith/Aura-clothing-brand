@@ -36,7 +36,7 @@ export default function Home() {
 
         <Hero />
 
-        <section className="py-20 md:py-40 px-8 flex flex-col md:flex-row items-center justify-between gap-20">
+        <section id="story" className="py-20 md:py-40 px-8 flex flex-col md:flex-row items-center justify-between gap-20">
           <div className="w-full md:w-1/2">
             <ParallaxImage
               src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2071&auto=format&fit=crop"
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="py-20 px-8 border-t border-slate-gray/20 flex flex-col md:flex-row justify-between items-start gap-20">
+        <footer id="footer" className="py-20 px-8 border-t border-slate-gray/20 flex flex-col md:flex-row justify-between items-start gap-20">
           <div>
             <span className="text-4xl font-serif font-bold tracking-widest block mb-10">AURA</span>
             <p className="max-w-xs text-slate-gray text-xs">

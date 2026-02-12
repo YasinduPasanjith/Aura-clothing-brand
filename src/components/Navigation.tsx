@@ -11,11 +11,11 @@ interface NavigationProps {
 }
 
 const NAV_LINKS = [
-    { title: "COLLECTIONS", href: "#", subtitle: "Spring / Summer 2025" },
-    { title: "ARCHIVE", href: "#", subtitle: "Past Seasons" },
-    { title: "THE STORY", href: "#", subtitle: "Our Philosophy" },
-    { title: "STORES", href: "#", subtitle: "Find a Boutique" },
-    { title: "CONTACT", href: "#", subtitle: "Get in Touch" },
+    { title: "HOME", href: "#hero", subtitle: "Top of Page" },
+    { title: "COLLECTIONS", href: "#collections", subtitle: "Spring / Summer 2025" },
+    { title: "ARCHIVE", href: "#archive", subtitle: "Past Seasons" },
+    { title: "THE STORY", href: "#story", subtitle: "Our Philosophy" },
+    { title: "STORES", href: "#footer", subtitle: "Find a Boutique" },
 ];
 
 export const Navigation = ({ isOpen, onClose }: NavigationProps) => {
