@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-eerie-black: #111111;
+  --color-off-white: #f5f5f5;
+  --color-slate-gray: #707070;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "Cormorant SC", serif; /* Using Cormorant for a high-fashion feel */
+}
+
+@layer base {
+  body {
+    background-color: var(--color-eerie-black);
+    color: var(--color-off-white);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+
+  p, span, a, button {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* Lenis CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
